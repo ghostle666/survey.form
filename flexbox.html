@@ -1,0 +1,29 @@
+<form style="display: flex; flex-direction: column; gap: 20px;">
+  <!-- First row with two labels and inputs, and checkboxes label next to the second input -->
+  <div style="display: flex; gap: 20px;">
+    <!-- First input pair (Label 1 + Input 1) -->
+    <div style="display: flex; flex-direction: column;">
+      <label for="input1">Label 1</label>
+      <input type="text" id="input1" name="input1">
+    </div>
+
+    <!-- Second input pair (Label 2 + Input 2) -->
+    <div style="display: flex; flex-direction: column;">
+      <label for="input2">Label 2</label>
+      <input type="text" id="input2" name="input2">
+    </div>
+
+    <!-- Checkbox label next to Input 2 -->
+    <div style="display: flex; flex-direction: column;">
+      <label for="checkboxes" style="margin-top: 10px;">Checkboxes</label>
+      <!-- Checkboxes under the "Checkboxes" label -->
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <label><input type="checkbox" name="checkbox1"> Option 1</label>
+        <label><input type="checkbox" name="checkbox2"> Option 2</label>
+        <label><input type="checkbox" name="checkbox3"> Option 3</label>
+        <label><input type="checkbox" name="checkbox4"> Option 4</label>
+        <label><input type="checkbox" name="checkbox5"> Option 5</label>
+      </div>
+    </div>
+  </div>
+</form>

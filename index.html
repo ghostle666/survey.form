@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-    <title>registration form</title>
-  <link rel="stylesheet" href="stylesheet.css"> 
-  
+    <meta charset="UTF-8">
+    <title>Get in touch</title>
+    <link rel="stylesheet" href="stylesheet.css"> 
 </head>
-  <body>
-    
-    <h1 id=title>Get in touch</h1>
 
-<p id="description">Interested in working together or have a question about my services? Please fill out the form below, and I’ll respond as soon as possible!</p>
+<body id="mail">
 
-
-    <form  id=survey-form> 
-    <div>
-<label id="name-label">Name</label>
-  <input id="name" required placeholder="Enter name" type="text">
-    <label id="email-label"> Email</label>
-      <input id="email" type="email" required placeholder="Enter your email"          type="radio">
-      </div>
-<div>
-          <label for="phone">Phone number.</label>
-            <input id="phone-number" required placeholder="xxx-xxx-xxxx" type="text">
+<div class="page1">
+    <h1 id="title">Get in touch</h1>
+    <p id="description">Interested in working together or have a question about my services? Please fill out the form below, and I’ll respond as soon as possible!</p>
+    <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </div>
-<div>
-  <p id="int">What services are you interested in?</p>
-  
-<input  type="checkbox" value="website-design">Website design
- <input id="checkbox" type="checkbox" value="logo-design">Logo Design
-    <input id="checkbox" type="checkbox" value="Branding">Branding
-      <input id="checkbox"    type="checkbox" value="Social-media-Graphics">Social Media Graphics
-        <input id="checkbox" type="checkbox" value="other">Other
+
+    <form id="form-container" >
+     
+  <div class="first-row">    
+
+    <div class="info">
+
+        <div class="name">
+            <label id="name-label">Name</label>
+              <input id="name" required placeholder="Enter name" type="text">
+         </div> 
+          
+            <div class="email">
+              <label id="email-label"> Email</label>
+                  <input id="email" type="email" required placeholder="Enter your email">
+            </div>
+                    
+    </div>        
         
+
+    
+<div class="row">
+              <label id="services-label"><h2>What services are you interested in?</h2></label>
+            <label><input type="checkbox" value="website-design">Website design</label>
+              <label><input type="checkbox" value="logo-design">Logo Design</label>
+              <label><input type="checkbox" value="Branding">Branding</label>
+              <label><input type="checkbox" value="Social-media-Graphics">Social Media Graphics</label>
+              <label><input type="checkbox" value="other">Other</label>
+                  
 </div>
-<div>
-<p id="pro"> Tell me more about your project</p>
-<textarea>Type here</textarea>
+  </div>
+
+
+<div class="text-areaa">
+
+<h3 id="project"> Tell me more about your project</h3>
+<textarea>...</textarea>
 </div>
+
+<div  class="second-sec">
 <div>
   <label id="budget-label">Estimated budget</label>
 <input id="number" type="number" min="1" max="999999" placeholder="$"></input>
@@ -67,9 +86,20 @@
 </select>
 <div>
 <button  id="submit" type="submit">Submit</button>
-<div>
+</div>
+
+</div>
+
 
 </form>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
