@@ -1,98 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get in touch</title>
     <link rel="stylesheet" href="stylesheet.css"> 
 </head>
 
-<body id="mail">
-<div class="page1">
-    <h1 id="title">Get in touch</h1>
-    <p id="description">Interested in working together or have a question about my services? Please fill out the form below, and I’ll respond as soon as possible!</p>
-    <div class="arrow">
+<body>
+  <div class="page1">
+    <div class="get-in-touch-sec">
+      <h1 id="title">Get in touch</h1>
+      <p id="description">Interested in working together or have a question about my services? Please fill out the form below, 
+           and I’ll respond as soon as possible!
+      </p>
+
+      <div class="arrow">
         <span></span>
         <span></span>
         <span></span>
+      </div>
     </div>
-</div>
+  </div>
 
-    <form id="form-container" >
-     <div class="whole-form">
-  <div class="first-row">    
-
-    <div class="info">
-
-        <div class="name">
-            <label id="name-label">Name</label>
-              <input id="name" required  type="text">
-         </div> 
-          
-            <div class="email">
-              <label id="email-label"> Email</label>
-                  <input id="email" type="email" required >
-            </div>
-                    
-    </div>        
+  <form>
+    <div class="idk">
+      <div class="name">
+        <label id="name-label">Name</label>
+        <input id="name" required  type="text">
         
+        <label id="email-label"> Email</label>
+        <input id="email" type="email" required >
+      </div>                    
+  
 
-    
-<div class="row">
-              <label id="services-label"><h2>What services are you interested in?</h2></label>
-            <label><input type="checkbox" value="website-design">Website design</label>
-              <label><input type="checkbox" value="logo-design">Logo Design</label>
-              <label><input type="checkbox" value="Branding">Branding</label>
-              <label><input type="checkbox" value="Social-media-Graphics">Social Media Graphics</label>
-              <label><input type="checkbox" value="other">Other</label>
-                  
-</div>
+      <h3 id="project"> Tell me more about your project</h3>
+      <textarea></textarea>
+      
+  <div class="budget">
+
+      <label id="budget-label">Estimated budget</label>
+      <input id="number" type="number" min="1" max="999999" placeholder="$">
   </div>
+    <div>
+      <p id="time">Expected time of completion</p> 
+      <input name="account" value="1week" type="radio">1 week
+      <input name="account" value="2weeks " type="radio">2 weeks
+      <input name="account" value="1month" type="radio">1 month
+      <input name="account" value="flexible" type="radio">Flexible
+    </div>
 
-
-<div class="text-areaa">
-
-<h3 id="project"> Tell me more about your project</h3>
-<textarea></textarea>
-</div>
-
-<div  class="second-sec">
-<div>
-  <label id="budget-label">Estimated budget</label>
-<input id="number" type="number" min="1" max="999999" placeholder="$"></input>
-</div>
-
-<div>
-  <p id="time">Expected time of completion</p> 
-<input name="account" value="1week" type="radio">1 week
-<input name="account" value="2weeks " type="radio">2 weeks
-<input name="account" value="1month" type="radio">1 month
-<input name="account" value="flexible" type="radio">Flexible
+    <div>  
+      <label id="number-label">how did you hear about us?</label> 
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="github">Github</option>
+        <option value="Linkedin">Linkedin</option>
+        <option>Google</option>
+      </select>
+     </div>
   </div>
-
-<div>  
-  <p>would you like to suscribe to our newsletter?</p>
-<input name="options" value="yes" type="radio">yes
-<input name="options" value="no" type="radio">no, thank you 
-</div>
-
-
-<label id="number-label">how did you hear about us?</label> 
-<select id="dropdown">
-<option value="">(select one)
-  <option value="github">Github</option>
-    <option value="Linkedin">Linkedin</option>
-      <option>Google</option>
-</select>
 <div>
-<button  id="submit" type="submit">Submit</button>
-</div>
 
-</div>
-</div>
-
-</form>
-
-
+    <div class="row">
+      <label id="services-label"><h2>What services are you interested in?</h2></label>
+      <label><input type="checkbox" value="website-design">Website design</label>
+      <label><input type="checkbox" value="logo-design">Logo Design</label>
+      <label><input type="checkbox" value="Branding">Branding</label>
+      <label><input type="checkbox" value="Social-media-Graphics">Social Media Graphics</label>
+      <label><input type="checkbox" value="other">Other</label>
+    </div>
+   
+    <div>
+     <button  id="submit" type="submit">Submit</button>
+    </div>
+ 
+    </form>
+ 
+  </body>
+</html>
 
 
 
